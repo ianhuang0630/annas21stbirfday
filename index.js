@@ -27,7 +27,6 @@ function generate_confetti(){
         // start the rotations
         var rotate_group = "rotate".concat(  Math.round(1+Math.random()).toString() );
         newDiv.classList.add(rotate_group);
-        console.log(rotate_group);
         divs.push(newDiv);
         var noisedx = Math.random() * 1000;
         var noisedy = Math.random() * 1000;

@@ -482,48 +482,18 @@ span {
 
 .rotate2{
     animation: twirl1 2s infinite linear;
-    -webkit-animation:twirl1 2s infinite linear; 
-    -moz-animation: twirl1 2s infinite linear;
-    -o-animation: twirl1 2s infinite linear;
 }
 
 .rotate1{
     animation: twirl1 1s infinite linear;
-    -webkit-animation:twirl1 1s infinite linear; 
-    -moz-animation: twirl1 1s infinite linear;
-    -o-animation: twirl1 1s infinite linear;
 }
 
-@-webkit-keyframes twirl1{
-    0%, 100% {
-        -webkit-transform:rotate(0 deg); 
-    }
-    50% {
-        -webkit-transform:rotate(-359 deg);   
-    }
-}
-@-moz-keyframes twirl1{
-    from{  
-        -moz-transform: rotate(0 deg);
-    }
-    to{
-        -moz-transform: rotate(-359 deg);  
-    }
-}
-@-o-keyframes twirl1{
-    from {
-        -o-transform: rotate(0 deg);
-    }
-    to{
-        -o-transform: rotate(-359 deg);
-    }
-}
 @keyframes twirl1{
     from {
-        transform: rotate(0 deg);
+        transform: rotate(0deg);
     }
     to{
-        transform: rotate(-359 deg);
+        transform: rotate(-359deg);
     }
 }
 
