@@ -131,6 +131,10 @@
   background-color: #ad030f;
 }
 
+.superscript{
+    font-size: 50px;
+}
+
 .flame {
   position: absolute;
   background-color: orange;
@@ -461,9 +465,33 @@ span {
     position:absolute;
     width: 24px;
     height: 24px;
-    left: -12px;
+    left: 0px;
     background-color: blue; 
 }
+
+.flame{
+    display:none;
+}
+.show{
+    display:block;
+}
+.hide{
+    display:none;
+}
+
+.rotate{
+    animation: twirl1 1s infinite linear;
+}
+
+@keyframes twirl1{
+    from {
+        transform: rotate(0 deg);
+    }
+    to{
+        transform: rotate(-359deg);
+    }
+}
+
 
 
 h1 {
@@ -473,3 +501,7 @@ h1 {
     color: white;
     font-size: 3.5em;
 }
+
+
+
+
