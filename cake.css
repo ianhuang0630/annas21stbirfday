@@ -9,7 +9,7 @@
 .cake {
   position: absolute;
   margin:auto;
-  margin-top: 220px;
+  margin-top: -80px;
   left: 50%;
   margin-left: -375px;
   width: 750px;
@@ -61,50 +61,57 @@
   0 90px 0px #281c09;
 }
 
+.imjoking_content{
+    font-family: 'Comfortaa'; 
+    font-size: 24px;
+}
+.heartfelt_content{
+    font-family: 'Allura', serif; 
+    font-size: 24px;
+}
 .layer1{
   top: 0px;
+}
+.content_l1{
+  top: 500px;
+  opacity:0; 
 }
 
 .layer2{
   top: 99px;
 }
+.content_l2{
+  top: 1200px; 
+  opacity:0; 
+}
 
 .layer3{
   top: 198px;
+}
+.content_l3{
+  top: 1900px;
+  opacity:0; 
 }
 
 .layer4{
   top: 297px;
 }
+.content_l4{
+  top: 2500px;
+  opacity:0; 
+} 
 
 .layer5{
   top: 396px;
+}
+.content_l5{
+  top: 3200px;
+  opacity:0; 
 }
 
 .layer6{
   top: 495px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .icing {
@@ -220,48 +227,60 @@
 }
 
 .part1{
-    transform: translate(0, 200px); 
+    transform: translate(0, 600px); 
     transition-duration: 2s;
 }
 
 .part2{
-    transform: translate(0, 300px);
+    transform: translate(0, 1200px);
     transition-duration: 2s;
 }
 
 .part3{
-    transform: translate(0, 400px);
+    transform: translate(0, 1800px);
     transition-duration: 2s;
 }
 
 .part4{
-    transform: translate(0, 400px);
+    transform: translate(0, 2400px);
     transition-duration: 2s;
 }
 
 .part5{
-    transform: translate(0, 400px);
+    transform: translate(0, 3000px);
     transition-duration: 2s;
 }
 
-@keyframes slide_down1{
-    0%{
-        transform: translate(0, 0);
-    }
-    100%{
-        transform: translate(0, 60px);
-    }
+.displaycontent{ 
+    animation: fadeIn ease 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
 }
 
-@keyframes slide_down2{
-    0%{
-        transform: translate(0, 0);
-    }
-    100%{
-        transform: translate(0, 60px);
-    }
+.fadeinContent{
+    animation: fadeIn ease 1s;
+    animation-fill-mode: forwards;
+
+}
+.evaporateContent{
+    animation: fadeOut ease 1s;
+    animation-fill-mode: forwards;
 }
 
+@keyframes fadeIn{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }     
+}
 
-
-
+@keyframes fadeOut{
+    0%{
+        opacity:1;
+    }
+    100%{
+        opacity:0;
+    }
+}

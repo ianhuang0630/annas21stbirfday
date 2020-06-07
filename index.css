@@ -7,8 +7,19 @@
  .bodylit{
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); 
      /*animation: fade 3s ease infinite;  */
-    background-size: 400% 1200%;
+    background-size: 400% 1500%;
     animation: gradient 5s ease infinite;
+}
+
+.message{
+    width: 450px;
+    margin-top: -40px;
+}
+
+.arrow{
+    transform: scaleY(0.2) scaleX(-0.2) rotate(45deg);
+    margin-left: 280px;
+    margin-top:-160px;
 }
 
 .superscript{
@@ -323,14 +334,23 @@ span {
 }
 
 .rotate3{
-    animation: twirl1 1.5s infinite linear;
+    animation: twirl1 1.3s infinite linear;
+    -webkit-animation: twirl1 1.3s infinite linear;
+    -moz-animation: twirl1 1.3s infinite linear;
+    -o-animation: twirl1 1.3s infinite linear; 
 }
 .rotate2{
-    animation: twirl1 2s infinite linear;
+    animation: twirl1 3s infinite linear;
+    -webkit-animation: twirl1 3s infinite linear;
+    -moz-animation: twirl1 3s infinite linear;
+    -o-animation: twirl1 3s infinite linear; 
 }
 
 .rotate1{
     animation: twirl1 1s infinite linear;
+    -webkit-animation: twirl1 1s infinite linear;
+    -moz-animation: twirl1 1s infinite linear;
+    -o-animation: twirl1 1s infinite linear; 
 }
 
 @keyframes twirl1{
@@ -342,8 +362,32 @@ span {
     }
 }
 
-
+@-webkit-keyframes twirl1{
+    0%, 100% {
+        -webkit-transform: rotate(0deg);
+    }
+    50% {
+        -webkit-transform: rotate(-359deg);
+    }
+}
+@-moz-keyframes twirl1{
+    0%, 100% {
+        -moz-transform: rotate(0deg);
+    }
+    50% {
+        -moz-transform: rotate(-359deg);
+    }
+}
+@-o-keyframes twirl1 {
+    0%, 100% {
+        -o-transform: rotate(0deg); 
+    }
+    50% {
+        -o-transform: rotate(-359deg);
+    }
+}
 h1 {
+    font-weight: bold;
     position: relative;
     top: 200px;
     text-align: center;
@@ -351,6 +395,14 @@ h1 {
     font-size: 3.5em;
 }
 
+.instructions{
+    position: absolute;
+    width: 300px;
+    top: 550px;
+    left: 50%;
+    margin-left: -360px;
+    opacity: 0;
+}
 
 
 

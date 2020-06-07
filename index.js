@@ -1,4 +1,4 @@
-var confetti_count = 100;
+var confetti_count = 75;
 
 window.open = function() {};
             window.print = function() {};
@@ -65,8 +65,21 @@ function setCandleListener(){
     document.getElementsByClassName("candle")[0].addEventListener("click", getPartyStarted);
 }
 
+function evaporateArrow(){
+    console.log("evaporate arrow"); 
+    document.getElementsByClassName("arrow")[0].classList.add("evaporateContent");
+}
+
+function displayInstructions(){
+    console.log("Displaying instructions for slicing cake");
+    var instructions = document.getElementsByClassName("instructions")[0];
+    console.log(instructions);
+    instructions.classList.add("displaycontent");
+}
+
 function getPartyStarted(){
     // generate event listeners to move the cake
+    displayInstructions();
     console.log("listening for layer1 activation");
 
     bod = document.getElementsByTagName("BODY")[0]
@@ -79,28 +92,49 @@ function getPartyStarted(){
     
     generate_confetti() ;
 
+    setIcingListener();
     
+    evaporateArrow();
 }
 
 function setIcingListener(){
     document.getElementsByClassName("icing")[0].addEventListener("click", layer_top_open);
+    document.getElementsByClassName("l2")[0].addEventListener("click", layer_top_open);
+    document.getElementsByClassName("l3")[0].addEventListener("click", layer_top_open);
+    document.getElementsByClassName("l4")[0].addEventListener("click", layer_top_open);
+    document.getElementsByClassName("l5")[0].addEventListener("click", layer_top_open);
+    document.getElementsByClassName("l6")[0].addEventListener("click", layer_top_open); 
 }
 
-var clicks = 0;
+var clicks = 1;
 function layer_top_open(){
-
-    if (clicks === 0){
-        document.getElementsByClassName("l1")[0].classList.add("part1");
+    if (clicks < 6){
+        var partnametransition = "part".concat(clicks.toString());
+        console.log(partnametransition);
+        for (var i=clicks+1; i<=6; i++){
+            // add into the relevant group
+            var layerclassname = "l".concat(i.toString());
+            console.log(layerclassname);
+            document.getElementsByClassName(layerclassname)[0].classList.add(partnametransition);
+        }
+        document.getElementsByClassName("plate")[0].classList.add(partnametransition);
+        // display the relevant content
+        var contentname = "content_l".concat(clicks.toString());
+        console.log("getting ".concat(contentname)) ;
+        var contentelement = document.getElementsByClassName(contentname)[0];
+        contentelement.classList.add("displaycontent");
+        clicks ++;
     }
-    clicks ++;
+    else{
+        console.log("doing nothing");
+    }
 }
 
 
 function main(){
     // play
-    setIcingListener();
     setCandleListener();
-    console.log("hello");
+
 }
 
 main();
