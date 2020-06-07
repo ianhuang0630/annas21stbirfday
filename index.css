@@ -251,7 +251,7 @@ span {
 .balloon > div:nth-child(5) {
     background: rgba(180, 224, 67, 0.9);
     left: 480px;
-    box-shadow: inset 10px 10px 10px rgba(180, 224, 67, 0.9);
+    box-shadow: inset 10px 10px 10px rgba(150, 200, 40, 0.9);
     -webkit-animation: balloon3 5s ease-in-out infinite;
     -moz-animation: balloon3 5s ease-in-out infinite;
     -o-animation: balloon3 5s ease-in-out infinite;
@@ -263,7 +263,7 @@ span {
 .balloon > div:nth-child(6) {
     background: rgba(182, 15, 97, 0.9);
     left: 600px;
-    box-shadow: inset 10px 10px 10px rgba(182, 15, 97, 0.9);
+    box-shadow: inset 10px 10px 10px rgba(160, 7, 70, 0.9);
     -webkit-animation: balloon3 3s ease-in-out infinite;
     -moz-animation: balloon3 3s ease-in-out infinite;
     -o-animation: balloon3 3s ease-in-out infinite;
@@ -275,11 +275,11 @@ span {
 .balloon > div:nth-child(7) {
     background: rgba(242, 194, 58, 0.9);
     left: 720px;
-    box-shadow: inset 10px 10px 10px rgba(242, 194, 58, 0.9);
+    box-shadow: inset 10px 10px 10px rgba(220, 170, 30, 0.9);
     -webkit-animation: balloon3 3s ease-in-out infinite;
     -moz-animation: balloon3 3s ease-in-out infinite;
     -o-animation: balloon3 3s ease-in-out infinite;
-    animation: balloon3 3s ease-in-out infinite;
+    animation: balloon1 3s ease-in-out infinite;
 }
 .balloon > div:nth-child(7):before {
     color: rgba(242, 194, 58, 0.9);
@@ -287,7 +287,7 @@ span {
 .balloon > div:nth-child(8) {
     background: rgba(45, 181, 167, 0.9);
     left: 840px;
-    box-shadow: inset 10px 10px 10px rgba(45, 181, 167, 0.9);
+    box-shadow: inset 10px 10px 10px rgba(25, 160, 140, 0.9);
     -webkit-animation: balloon2 3s ease-in-out infinite;
     -moz-animation: balloon2 3s ease-in-out infinite;
     -o-animation: balloon2 3s ease-in-out infinite;
