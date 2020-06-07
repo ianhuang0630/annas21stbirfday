@@ -13,7 +13,7 @@
   left: 50%;
   margin-left: -375px;
   width: 750px;
-  height: 600px;
+  height: 900px;
 }
 
 .plate {
@@ -61,17 +61,51 @@
   0 90px 0px #281c09;
 }
 
-.layer-top {
+.layer1{
   top: 0px;
 }
 
-.layer-middle {
+.layer2{
   top: 99px;
 }
 
-.layer-bottom {
+.layer3{
   top: 198px;
 }
+
+.layer4{
+  top: 297px;
+}
+
+.layer5{
+  top: 396px;
+}
+
+.layer6{
+  top: 495px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .icing {
   top: 6px;
