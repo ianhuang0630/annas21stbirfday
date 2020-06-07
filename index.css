@@ -1,12 +1,13 @@
 
  body {
     background-color: #222222;
+    background-size: 100% 100%;
  }
  
  .bodylit{
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); 
      /*animation: fade 3s ease infinite;  */
-    background-size: 400% 400%;
+    background-size: 400% 1200%;
     animation: gradient 5s ease infinite;
 }
 

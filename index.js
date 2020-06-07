@@ -31,10 +31,10 @@ function generate_confetti(){
         newDiv.classList.add(rotate_group);
         divs.push(newDiv);
         var noisedx = Math.random() * 1000;
-        var noisedy = Math.random() * 1000;
+        var noisedy = Math.random() * 900;
         var dx = noisedx;
         dxs.push(dx); 
-        var dy = 50 + noisedy;
+        var dy = 100+ noisedy;
         dys.push(dy);
     }
     // add to the rotate list
@@ -66,6 +66,9 @@ function setCandleListener(){
 }
 
 function getPartyStarted(){
+    // generate event listeners to move the cake
+    console.log("listening for layer1 activation");
+
     bod = document.getElementsByTagName("BODY")[0]
     bod.classList.add("bodylit");
     
@@ -75,10 +78,27 @@ function getPartyStarted(){
     player.play();
     
     generate_confetti() ;
+
+    
 }
+
+function setIcingListener(){
+    document.getElementsByClassName("icing")[0].addEventListener("click", layer_top_open);
+}
+
+var clicks = 0;
+function layer_top_open(){
+
+    if (clicks === 0){
+        document.getElementsByClassName("l1")[0].classList.add("part1");
+    }
+    clicks ++;
+}
+
 
 function main(){
     // play
+    setIcingListener();
     setCandleListener();
     console.log("hello");
 }
