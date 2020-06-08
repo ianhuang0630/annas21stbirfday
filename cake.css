@@ -85,14 +85,14 @@
     font-size: 24px;
 }
 .heartfelt_content{
-    font-family: 'Montez', serif; 
+    font-family: "Marck Script", serif; /* 'Montez', serif; */
     font-size: 32px;
 }
 .layer1{
   top: 0px;
 }
 .content_l1{
-  top: 400px;
+  top: 370px;
   opacity:0; 
 }
 
