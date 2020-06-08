@@ -405,4 +405,18 @@ h1 {
 }
 
 
+.redlink{
+    color:#ffffff;
+}
 
+.tama{
+    left: 50%;
+    margin-top: -170px;
+    margin-left: -210px;
+    transform: scale(0.3);
+}
+.eat_cake{
+    border-radius: 50%;  
+    margin-top: -120px;
+    transform: scale(0.5);
+}

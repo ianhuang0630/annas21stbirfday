@@ -66,14 +66,14 @@
     font-size: 24px;
 }
 .heartfelt_content{
-    font-family: 'Allura', serif; 
-    font-size: 24px;
+    font-family: 'Montez', serif; 
+    font-size: 32px;
 }
 .layer1{
   top: 0px;
 }
 .content_l1{
-  top: 500px;
+  top: 400px;
   opacity:0; 
 }
 
@@ -81,7 +81,11 @@
   top: 99px;
 }
 .content_l2{
-  top: 1200px; 
+  text-align:center;
+  top: 1200px;
+  width: 750px;
+  left: 50%; 
+  margin-left: -375px;
   opacity:0; 
 }
 
@@ -89,7 +93,11 @@
   top: 198px;
 }
 .content_l3{
+  text-align:center;
   top: 1900px;
+  width: 500px;
+  left: 50%;
+  margin-left: -250px;
   opacity:0; 
 }
 
@@ -97,7 +105,11 @@
   top: 297px;
 }
 .content_l4{
+  text-align:center;
   top: 2500px;
+  width: 750px;
+  left: 50%;
+  margin-left: -375px;
   opacity:0; 
 } 
 
@@ -105,7 +117,11 @@
   top: 396px;
 }
 .content_l5{
+  text-align:center;
   top: 3200px;
+  width: 750px;
+  left: 50%;
+  margin-left:-375px;
   opacity:0; 
 }
 
@@ -227,12 +243,12 @@
 }
 
 .part1{
-    transform: translate(0, 600px); 
+    transform: translate(0, 700px); 
     transition-duration: 2s;
 }
 
 .part2{
-    transform: translate(0, 1200px);
+    transform: translate(0, 1350px);
     transition-duration: 2s;
 }
 

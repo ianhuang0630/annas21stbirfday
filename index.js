@@ -91,9 +91,7 @@ function getPartyStarted(){
     player.play();
     
     generate_confetti() ;
-
     setIcingListener();
-    
     evaporateArrow();
 }
 
